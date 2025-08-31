@@ -12,7 +12,7 @@ https://vevc.dpdns.org/archives/12.html
    
 ​`FROM vevc/fml​​`
 
-​`vless://2584b733-9095-4bec-a7d5-62b473540f7a@example.com:443?encryption=none&security=tls&fp=chrome&type=xhttp&path=%2F&mode=auto#hf-xhttp​​`
+​vless://2584b733-9095-4bec-a7d5-62b473540f7a@example.com:443?encryption=none&security=tls&fp=chrome&type=xhttp&path=%2F&mode=auto#hf-xhttp​​
 
 
 2. 修改环境变量 UUID, DOMAIN
