@@ -9,12 +9,15 @@ https://vevc.dpdns.org/archives/12.html
 
 # 搭建 xhttp 节点
 1. 搭建节点，获取订阅链接
-FROM vevc/fml
-vless://2584b733-9095-4bec-a7d5-62b473540f7a@example.com:443?encryption=none&security=tls&fp=chrome&type=xhttp&path=%2F&mode=auto#hf-xhttp
+   
+​`FROM vevc/fml​​`
+
+​`vless://2584b733-9095-4bec-a7d5-62b473540f7a@example.com:443?encryption=none&security=tls&fp=chrome&type=xhttp&path=%2F&mode=auto#hf-xhttp​​`
+
 
 2. 修改环境变量 UUID, DOMAIN
 
-3. IP 归属地查询：https://ping0.cc
+3. IP 归属地查询：​`https://ping0.cc​`
 
 # 解锁会员功能 SSH 终端
 http://v.com
@@ -26,18 +29,23 @@ https://www.youtube.com/watch?v=oTTG5KQXd18
 # 解除流媒体网站访问限制
 问题：YouTube，TikTok 不能访问？
 
-❌ curl https://www.youtube.com/200
-✅ curl --doh-url https://1.1.1.1/dns-query https://www.youtube.com/200
+❌ ​`curl https://www.youtube.com/200​`
+
+✅ ​`curl --doh-url https://1.1.1.1/dns-query https://www.youtube.com/200​`
+
 系统默认 DNS 配置文件
 
-cat /etc/resolv.conf
+​`cat /etc/resolv.conf​`
+
 解决方案：修改 xray 的 DNS 配置，绕过系统 DNS 拦截
-xray 配置文件：https://github.com/vevc/one-node/blob/main/hugging-face/app/xy/config.json
+
+xray 配置文件：​`https://github.com/vevc/one-node/blob/main/hugging-face/app/xy/config.json​`
 
 # 自动保活
 1、保活原理：保证 48 小时内有访问流量即可
 2、查看保活是否成功
 
-cat /tmp/keepalive.log
+​`cat /tmp/keepalive.log​`
+
 注意事项
 不要在容器内存放重要文件
